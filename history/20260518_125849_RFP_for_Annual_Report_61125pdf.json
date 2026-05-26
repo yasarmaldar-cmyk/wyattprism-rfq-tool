@@ -1,0 +1,269 @@
+{
+  "id": "20260518_125849_RFP_for_Annual_Report_61125pdf",
+  "filename": "RFP for Annual Report 61125.pdf",
+  "saved_at": "2026-05-18T12:58:49.323467",
+  "doc_meta": {
+    "page_count": 87,
+    "char_count": 220952,
+    "file_type": "pdf"
+  },
+  "results": {
+    "summary": {
+      "issuing_organization": {
+        "name": "State Bank of India (SBI)",
+        "type": "PSU",
+        "sector": "BFSI",
+        "listed_entity": true
+      },
+      "document_type": "RFP",
+      "report_type": "Annual Report",
+      "scope_of_work": {
+        "description": "Design and development of Bank's Annual Report in multiple versions including content creation, design, layout, translation, and interactive site development",
+        "deliverables": [
+          "Abridged Annual Report (diglot form in Hindi & English)",
+          "Unabridged Annual Report for Shareholders/Investors (English)",
+          "Unabridged Annual Report for Regulators/Parliament (English & Hindi)",
+          "US Dollar version (English only)",
+          "Chairman's Speech (English and Hindi)",
+          "Interactive website for Annual Report",
+          "Cover page design",
+          "Theme identification and presentation structure",
+          "Copy-writing, editing, typesetting",
+          "Proof-reading in English and Hindi",
+          "Artwork, graphics, photographs, design and layout"
+        ],
+        "print_specs": {
+          "page_count": null,
+          "copies": null,
+          "paper_gsm": null,
+          "binding": null,
+          "size": "27 cm x 21 cm or as advised by the Bank",
+          "other": null
+        },
+        "digital_deliverables": [
+          "Interactive site to be completed within 1 month after finalizing Hindi and English versions"
+        ],
+        "languages": [
+          "English",
+          "Hindi"
+        ]
+      },
+      "frameworks": {
+        "detected": [],
+        "implied": [],
+        "recommended_frameworks": [
+          "BRSR (mandatory for top 1000 listed entities per SEBI)",
+          "GRI Standards",
+          "TCFD",
+          "SASB Financials",
+          "SDGs",
+          "IR Framework"
+        ],
+        "no_framework_detected": true,
+        "framework_notes": "As SBI is a listed BFSI entity among top companies, BRSR compliance is mandatory per SEBI regulations. Given the banking sector, TCFD for climate disclosures, SASB Financials for sector-specific metrics, and GRI for comprehensive sustainability reporting would be relevant frameworks to consider for the Annual Report."
+      },
+      "timeline": {
+        "key_dates": [
+          {
+            "event": "Bid Document Availability",
+            "date": "29.09.2025 to 30.10.2025",
+            "notes": null
+          },
+          {
+            "event": "Last date for clarifications",
+            "date": "Up to 04.00 PM on 14.10.2025",
+            "notes": null
+          },
+          {
+            "event": "Pre-bid Meeting",
+            "date": "11.00 AM to 2.00 PM on 17.10.2025",
+            "notes": "Online mode or in person"
+          },
+          {
+            "event": "Clarifications to pre-bid queries",
+            "date": "18.10.2025",
+            "notes": "Through email"
+          },
+          {
+            "event": "Bid submission deadline",
+            "date": "Up to 5.30 PM on 30.10.2025",
+            "notes": null
+          },
+          {
+            "event": "Technical Bid opening",
+            "date": "4.00 PM on 03.11.2025",
+            "notes": null
+          },
+          {
+            "event": "Presentation Date",
+            "date": "06.11.2025",
+            "notes": "Timing to be advised separately"
+          },
+          {
+            "event": "Price Bid opening",
+            "date": "4.00 PM on 11.11.2025",
+            "notes": null
+          }
+        ],
+        "project_duration": "3 years from effective date",
+        "phases": [
+          {
+            "phase": "Annual Report design and development",
+            "duration": "Yearly basis for 3 years"
+          }
+        ]
+      },
+      "evaluation_criteria": {
+        "method": "QCBS (Quality and Cost Based Selection)",
+        "technical_weightage": "70%",
+        "financial_weightage": "30%",
+        "scoring_parameters": [
+          {
+            "parameter": "Experience in designing Annual Reports",
+            "max_marks": "5"
+          },
+          {
+            "parameter": "Experience with listed BFSI entities (last 3 years)",
+            "max_marks": "20"
+          },
+          {
+            "parameter": "Experience with Top 500 listed entities excluding BFSI (last 3 years)",
+            "max_marks": "20"
+          },
+          {
+            "parameter": "Dedicated team composition and experience",
+            "max_marks": "5"
+          },
+          {
+            "parameter": "Presentation",
+            "max_marks": "20"
+          }
+        ]
+      },
+      "financial_terms": {
+        "emd_amount": "Waived",
+        "tender_fee": "Waived",
+        "payment_structure": "Yearly payment on completion - \u20b929,00,000/- per year, Total \u20b990,00,000/- for 3 years",
+        "gst_treatment": "Exclusive of GST",
+        "other_fees": "Performance Bank Guarantee of \u20b91.00 Lakh for 3 years 3 months"
+      },
+      "submission_requirements": {
+        "format": "Online portal",
+        "email_addresses": [
+          "ar.snb@sbi.co.in"
+        ],
+        "copies_required": null,
+        "separate_technical_commercial": true
+      },
+      "special_requirements": [
+        "Indian company/LLP/Partnership firm registration mandatory",
+        "Minimum \u20b95 Cr average turnover in last 3 financial years",
+        "Profitable for at least 2 out of 3 financial years",
+        "Minimum 3 years experience in Annual Report design for listed entities",
+        "Experience with at least 3 different top 500 listed entities (excluding BFSI) in last 3 years",
+        "Experience with at least 2 different listed BFSI entities among top 500 in last 3 years",
+        "Dedicated team of at least 6 qualified resources with minimum 2 years experience each",
+        "Combined team experience of 15 years in Annual Report design",
+        "Compliance with PPP-MII Order 2017",
+        "50% local content requirement for Class-I local supplier classification",
+        "Class-III Digital Signature Certificate mandatory"
+      ],
+      "contact_information": [
+        {
+          "name": "The General Manager",
+          "role": "Issuing Officer",
+          "email": "ar.snb@sbi.co.in",
+          "phone": "022-22740844/22740849 (10.30AM to 5.30PM)"
+        }
+      ]
+    },
+    "clarifications": [
+      {
+        "question": "As a listed PSU bank, what regulatory frameworks should the Annual Report align with? We recommend including BRSR (Business Responsibility and Sustainability Reporting) compliance as it's mandatory for SBI per SEBI requirements, plus consider GRI Standards and TCFD recommendations for enhanced sustainability disclosures. Which frameworks should we incorporate?",
+        "section_reference": "RFP document lacks framework specification",
+        "severity": "high",
+        "category": "framework",
+        "reason": "Framework requirements directly impact content structure, compliance requirements, and pricing - critical for accurate proposal preparation"
+      },
+      {
+        "question": "What are the exact page counts expected for each of the 5 versions - Abridged (Hindi & English), Unabridged (for Shareholders), Unabridged (for Regulators), US Dollar version, and Chairman's Speech?",
+        "section_reference": "Scope of Work - Preparation of Annual Report",
+        "severity": "high",
+        "category": "scope",
+        "reason": "Page counts are essential for accurate resource allocation, timeline estimation, and cost calculation"
+      },
+      {
+        "question": "When will SBI's FY 2025-26 financial results be declared, and what is the firm deadline for completion of all versions of the Annual Report? Please provide a detailed timeline with milestones.",
+        "section_reference": "Pre-Bid Query Format mentions AGM date request",
+        "severity": "high",
+        "category": "timeline",
+        "reason": "Annual report production is highly time-sensitive and requires precise scheduling around results declaration"
+      },
+      {
+        "question": "What is the approval hierarchy and sign-off process? How many stakeholders are involved in approvals, what are their roles, and what is the typical approval cycle time for each review round?",
+        "section_reference": "No approval process details mentioned",
+        "severity": "high",
+        "category": "process",
+        "reason": "Complex approval processes can significantly impact delivery timelines and resource requirements"
+      },
+      {
+        "question": "What content will SBI provide versus what needs to be created by the consultant? Will SBI provide draft text content, financial data, photographs, statutory disclosures, and management messages, or is content creation part of our scope?",
+        "section_reference": "Scope mentions 'Copy-write, edit, typeset' but unclear on content sourcing",
+        "severity": "high",
+        "category": "content",
+        "reason": "Content responsibility division affects resource planning, expertise requirements, and pricing structure"
+      },
+      {
+        "question": "What are the exact print specifications - paper GSM, binding type (perfect bound/saddle stitched), number of colors, exact paper size (you mention 27cm x 21cm but need confirmation), and quantity for each version?",
+        "section_reference": "Scope mentions size 27 cm x 21 cm but lacks detailed print specs",
+        "severity": "high",
+        "category": "technical",
+        "reason": "Print specifications directly impact production costs and vendor selection for printing"
+      },
+      {
+        "question": "For the interactive website mentioned in scope, what are the technical requirements - hosting arrangements, CMS platform, accessibility standards, mobile responsiveness requirements, and integration with SBI's existing web infrastructure?",
+        "section_reference": "Scope mentions 'Develop interactive site' without technical details",
+        "severity": "high",
+        "category": "technical",
+        "reason": "Digital deliverable specifications are essential for technical feasibility and accurate resource estimation"
+      },
+      {
+        "question": "You mention Hindi translation support from SBI in the pre-bid query format. What exactly will SBI provide - translation services, review of Hindi content, or just approval? What is our responsibility for Hindi accuracy?",
+        "section_reference": "Pre-Bid Query Format mentions Hindi translation support",
+        "severity": "medium",
+        "category": "content",
+        "reason": "Hindi translation responsibility affects quality assurance processes and potential liability"
+      },
+      {
+        "question": "How many rounds of revisions are included in the quoted price? What constitutes a major revision versus minor corrections, and how are additional revision rounds handled?",
+        "section_reference": "No revision round specification mentioned",
+        "severity": "medium",
+        "category": "scope",
+        "reason": "Revision limits are crucial for scope management and preventing scope creep"
+      },
+      {
+        "question": "Will SBI provide brand guidelines, previous year's reports for reference, photography (or budget for new photography), and access to senior management for interviews/content development?",
+        "section_reference": "Scope mentions photographs and design but source unclear",
+        "severity": "medium",
+        "category": "content",
+        "reason": "Brand asset availability impacts creative development timeline and additional costs"
+      },
+      {
+        "question": "Since payment is made only once per year after completion, what is the payment timeline after invoice submission? The SLA mentions 60 days - is this firm, and are there any milestone payments possible?",
+        "section_reference": "Price Bid notes and SLA payment terms",
+        "severity": "medium",
+        "category": "financial",
+        "reason": "Annual payment terms create significant cash flow implications for vendors"
+      },
+      {
+        "question": "For the mandatory on-site presence 'from declaration of annual result till completion', what are the working hours, number of resources required on-site, and will SBI provide workspace and infrastructure?",
+        "section_reference": "SLA mentions exclusive presence at SBI location",
+        "severity": "medium",
+        "category": "process",
+        "reason": "On-site resource requirements significantly impact operational costs and team deployment"
+      }
+    ]
+  },
+  "org_name": "State Bank of India (SBI)",
+  "report_type": "Annual Report"
+}

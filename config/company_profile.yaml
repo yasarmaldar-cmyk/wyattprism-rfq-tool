@@ -1,0 +1,137 @@
+company:
+  name: WyattPrism Communications
+  type: Pvt Ltd
+  established: 2016
+  registration:
+    cin: ""
+    gst: ""
+    pan: ""
+    msme: ""
+  offices:
+    - Gurgaon
+    - Mumbai
+    - Kolkata
+    - Bengaluru
+
+financials:
+  annual_turnover:
+    - year: "FY 2024-25"
+      amount_inr: 0
+    - year: "FY 2023-24"
+      amount_inr: 0
+    - year: "FY 2022-23"
+      amount_inr: 0
+
+experience:
+  years_in_business: 9
+  total_reports: 500
+  total_annual_reports: 0
+  total_integrated_reports: 0
+  total_sustainability_reports: 0
+  awards: 275+
+  clients:
+    - name: Hindustan Zinc Limited (HZL)
+      type: Private
+      sector: Mining & Metals
+      project: Annual Report / Integrated Report
+      listed_entity: true
+    - name: ICICI
+      type: Private
+      sector: BFSI
+      project: Annual Report
+      listed_entity: true
+    - name: Swiggy
+      type: Private
+      sector: Technology / Food Delivery
+      project: Corporate Communications
+      listed_entity: true
+    - name: Adani
+      type: Private
+      sector: Infrastructure / Energy
+      project: Annual Report / Sustainability Report
+      listed_entity: true
+    - name: IndeGene
+      type: Private
+      sector: Healthcare / Life Sciences
+      project: Corporate Communications
+      listed_entity: false
+
+team:
+  total_strength: 0
+  key_members:
+    - role: Director & Founder
+      name: Preeti Shah
+      experience_years: 25
+      reports_done: 500
+    - role: CEO
+      name: Manisha Srivastava
+      experience_years: 20
+      certifications: GRI-Certified
+    - role: Founder
+      name: Aditya Sharma
+      experience_years: 20
+      education: MBA Lancaster University
+    - role: Founder
+      name: Vipul Shah
+      experience_years: 20
+      expertise: Equity Research & Capital Markets
+    - role: Director - Marketing
+      name: CA Shailesh Vyas
+      experience_years: 21
+      certifications: Chartered Accountant
+    - role: President - Corporate Reporting
+      name: Pooja Marwaha
+      experience_years: 10
+      education: Master's in Marketing
+    - role: Creative Director
+      name: Kousik Basu
+      experience_years: 15
+      education: Postgraduate in Advertising & PR
+    - role: Head - Strategy & Finance
+      name: Siddhi Shah
+      experience_years: 10
+    - role: Head - South India
+      name: Smita Ramakrishna
+      experience_years: 20
+      certifications: Chartered Accountant, MBA Strathclyde
+
+capabilities:
+  services:
+    - Annual Report Design
+    - Integrated Annual Report
+    - Sustainability Report
+    - ESG Report
+    - Corporate Brochure
+    - CSR Brochure
+    - Internal Newsletters
+    - Corporate Profiles
+    - Digital Marketing
+    - Employee Engagement Communications
+    - Print Supervision
+  frameworks_expertise:
+    - SEBI LODR (Listing Obligations & Disclosure Requirements)
+    - Companies Act 2013 (Section 134, 135, Schedule V)
+    - BRSR (Business Responsibility & Sustainability Reporting)
+    - GRI Standards (GRI-Certified Training)
+    - IR Framework (Integrated Reporting Training Partners)
+    - TCFD
+    - IFRS S1/S2 (ISSB)
+    - SDGs
+    - ESG Tracking
+  languages:
+    - English
+    - Hindi
+  print:
+    can_supervise_printing: true
+    partner_printers: []
+  digital:
+    - Interactive PDF
+    - Web Flipbook
+    - HTML5
+    - Digital Reports
+    - Online Content Communication
+    - Digital Marketing
+
+certifications:
+  - GRI-Certified Training (multiple team members)
+  - Integrated Reporting Training Partners

@@ -1,0 +1,17 @@
+{
+  "id": "20260521_091539_BRIDGE_TEST_Tata_Power",
+  "filename": "Tata Power — Annual Report (Manual)",
+  "saved_at": "2026-05-21T03:45:39",
+  "doc_meta": {"page_count": 0, "char_count": 1200, "file_type": "manual"},
+  "results": {
+    "summary": {"issuing_organization": {"name": "Tata Power"}, "report_type": "Annual Report"},
+    "clarifications": [],
+    "proposal": "## Proposal for Tata Power AR 2025-26\n\nDelivery: ~120 pages bilingual annual report. Total cost: Rs. 18.5 lac.\n\n(This is a synthetic record written to test the shell↔RFQ-tool bridge.)"
+  },
+  "org_name": "Tata Power",
+  "report_type": "Annual Report",
+  "status": "draft",
+  "wp_project_id": "cmpexc3uf0008wb9ywe39lgve",
+  "wp_project_code": "WP-2026-001",
+  "status_history": [{"status":"draft","date":"2026-05-21T03:45:39","notes":"Bridge test"}]
+}

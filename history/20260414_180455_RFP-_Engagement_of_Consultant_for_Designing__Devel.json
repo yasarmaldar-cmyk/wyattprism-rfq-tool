@@ -1,0 +1,233 @@
+{
+  "id": "20260414_180455_RFP-_Engagement_of_Consultant_for_Designing__Devel",
+  "filename": "RFP- Engagement of Consultant for Designing & Developing of Annual Report.pdf",
+  "saved_at": "2026-04-14T18:04:55.701092",
+  "doc_meta": {
+    "page_count": 15,
+    "char_count": 28654,
+    "file_type": "pdf"
+  },
+  "results": {
+    "summary": {
+      "issuing_organization": {
+        "name": "Multi Commodity Exchange of India Limited (MCX)",
+        "type": "Private",
+        "sector": "Financial Services",
+        "listed_entity": true
+      },
+      "document_type": "RFP",
+      "report_type": "Integrated Annual Report",
+      "scope_of_work": {
+        "description": "End-to-end management, design, content development and layout of Integrated Annual Report and Annual Financial Statements with creative design services, content development, interviews, and delivery of print and digital versions",
+        "deliverables": [
+          "Integrated Annual Report design and layout",
+          "Annual Financial Statements presentation",
+          "Corporate Information Section layout",
+          "Statutory Reports presentation including BRSR",
+          "Value Creation Model development",
+          "Content creation and copywriting",
+          "Print-ready version",
+          "Digital version",
+          "One full-time designer on premises"
+        ],
+        "print_specs": {
+          "page_count": "350 pages (Traditional), 400 pages (Partial Integrated), 450 pages (Fully Integrated)",
+          "copies": null,
+          "paper_gsm": null,
+          "binding": null,
+          "size": null,
+          "other": null
+        },
+        "digital_deliverables": [
+          "Digital versions compatible across devices and formats"
+        ],
+        "languages": [
+          "English"
+        ]
+      },
+      "frameworks": {
+        "detected": [
+          "BRSR"
+        ],
+        "implied": [
+          "IR Framework"
+        ],
+        "recommended_frameworks": [],
+        "no_framework_detected": false,
+        "framework_notes": "BRSR (Business Responsibility and Sustainability Reporting) explicitly mentioned as part of statutory reports to be presented. Integrated Annual Report approach suggests IR Framework implementation with Value Creation Model and capital-wise performance mentioned."
+      },
+      "timeline": {
+        "key_dates": [
+          {
+            "event": "RFP Date",
+            "date": "11th March 2026",
+            "notes": null
+          }
+        ],
+        "project_duration": "Three years with possible extension",
+        "phases": []
+      },
+      "evaluation_criteria": {
+        "method": "Techno-Commercial (QCBS)",
+        "technical_weightage": "70%",
+        "financial_weightage": "30%",
+        "scoring_parameters": [
+          {
+            "parameter": "Experience in Annual Report business",
+            "max_marks": "10"
+          },
+          {
+            "parameter": "Experience with Market Infrastructure Institutions",
+            "max_marks": "10"
+          },
+          {
+            "parameter": "Number of listed clients served",
+            "max_marks": "20"
+          },
+          {
+            "parameter": "Quality of presentation",
+            "max_marks": "20"
+          },
+          {
+            "parameter": "Number of employees to be deployed",
+            "max_marks": "10"
+          }
+        ]
+      },
+      "financial_terms": {
+        "emd_amount": null,
+        "tender_fee": null,
+        "payment_structure": "Payment only after delivery of hard copy and soft copy of Annual Report and completion of assignment",
+        "gst_treatment": "Prices to be quoted excluding taxes, statutory deductions will be made",
+        "other_fees": null
+      },
+      "submission_requirements": {
+        "format": "Email confirmation required first, then e-bidding process details will be provided",
+        "email_addresses": [
+          "prakash.komu@mcxindia.com"
+        ],
+        "copies_required": null,
+        "separate_technical_commercial": true
+      },
+      "special_requirements": [
+        "Minimum 5 years experience in Annual Report services",
+        "Experience with at least 10 listed companies in last 5 years including 3 top 250 companies",
+        "Minimum 5 qualified manpower with Annual Report experience",
+        "One full-time designer to be provided on MCX premises",
+        "Compliance with CII protection and IT security norms",
+        "No current debarment/blacklisting by regulatory bodies",
+        "Penalty of 2% per week delay up to 10% maximum"
+      ],
+      "contact_information": [
+        {
+          "name": "Mr. Prakash Komu",
+          "role": "Contact Person",
+          "email": "prakash.komu@mcxindia.com",
+          "phone": "9920381998"
+        }
+      ]
+    },
+    "clarifications": [
+      {
+        "question": "The RFP mentions three report options (Traditional 350 pages, Partial Integrated 400 pages, Fully Integrated 450 pages) but doesn't specify which one MCX prefers. Which type of report does MCX want, and what are the specific differences in scope between these three options?",
+        "section_reference": "Annexure D - Commercial/Price Bid",
+        "severity": "high",
+        "category": "scope",
+        "reason": "Cannot prepare accurate proposal or pricing without knowing the exact report type and scope requirements"
+      },
+      {
+        "question": "While BRSR is mentioned as being provided by MCX, there's no clarity on whether the Integrated Report should follow the IR Framework principles. Should we structure the report around the IR Framework's six capitals and value creation model, or follow a different reporting structure?",
+        "section_reference": "Scope of Work - Point 2 under Developing section",
+        "severity": "high",
+        "category": "framework",
+        "reason": "IR Framework compliance significantly impacts report structure, content development approach, and overall project scope"
+      },
+      {
+        "question": "What is the complete project timeline from contract award to final delivery? The RFP mentions penalties for delays but doesn't specify the actual delivery deadline or key milestones.",
+        "section_reference": "Payment Terms and Penalties sections",
+        "severity": "high",
+        "category": "timeline",
+        "reason": "Cannot plan resources or assess feasibility without clear project timeline and milestones"
+      },
+      {
+        "question": "The scope mentions providing 'one full time designer in our premises exclusively' but doesn't specify the duration. For how many months/weeks is the on-site designer required, and what are the specific working hours and security clearance requirements?",
+        "section_reference": "Scope of Work - Point 7 under Developing section",
+        "severity": "high",
+        "category": "scope",
+        "reason": "On-site resource deployment has significant cost and logistics implications that affect pricing"
+      },
+      {
+        "question": "For the materiality assessment mentioned in scope point 2, does MCX have an existing materiality matrix or stakeholder engagement results, or do you expect us to conduct fresh stakeholder consultations and materiality analysis?",
+        "section_reference": "Scope of Work - Point 2 under Developing section",
+        "severity": "high",
+        "category": "content",
+        "reason": "Materiality assessment scope significantly impacts project timeline, resources required, and content development approach"
+      },
+      {
+        "question": "What are the specific print specifications required - paper GSM for cover and inner pages, binding type, print quantities for the annual report, and any special printing requirements like spot UV, embossing, or special paper finishes?",
+        "section_reference": "Scope of Work - Point 8",
+        "severity": "high",
+        "category": "technical",
+        "reason": "Print specifications directly impact cost calculations and vendor selection for printing partnerships"
+      },
+      {
+        "question": "The pricing structure shows 'Designing' and 'Developing' as separate columns but doesn't clarify if printing costs are additional. Should we quote printing costs separately, and if so, what print quantities are required?",
+        "section_reference": "Annexure D - Commercial/Price Bid",
+        "severity": "high",
+        "category": "financial",
+        "reason": "Unclear pricing structure could lead to budget mismatches and proposal rejection"
+      },
+      {
+        "question": "How many revision rounds are included in the scope? The RFP mentions proofreading and corrections but doesn't specify limits on client feedback cycles or revision iterations.",
+        "section_reference": "Scope of Work - Point 5 under Developing section",
+        "severity": "high",
+        "category": "scope",
+        "reason": "Unlimited revisions can significantly impact project profitability and timeline"
+      },
+      {
+        "question": "Who will provide the financial data, audited statements, and statutory reports? What is the expected timeline for MCX to provide all content inputs, and in what format will the data be shared?",
+        "section_reference": "Scope of Work - Point 4 under Designing section",
+        "severity": "medium",
+        "category": "content",
+        "reason": "Content provision timeline affects our project planning and resource allocation"
+      },
+      {
+        "question": "Are there existing MCX brand guidelines, design templates, or previous annual report designs that need to be referenced or followed? Should we provide multiple design concept options for selection?",
+        "section_reference": "Scope of Work - Point 1 under Designing section",
+        "severity": "medium",
+        "category": "design",
+        "reason": "Brand guideline availability affects design development time and creative approach"
+      },
+      {
+        "question": "The evaluation mentions 'presentation evidencing proof of past experience and approach' worth 20 marks. What format is expected for this presentation - physical, virtual, duration, and what specific elements should be covered?",
+        "section_reference": "Annexure C - Technical Evaluation Criteria, Point 4",
+        "severity": "medium",
+        "category": "process",
+        "reason": "Presentation format and requirements affect proposal preparation strategy and resource planning"
+      },
+      {
+        "question": "What is MCX's approval hierarchy for the annual report? Who are the key stakeholders involved in review and sign-off, and what is the typical approval cycle duration?",
+        "section_reference": "Not specified in RFP",
+        "severity": "medium",
+        "category": "process",
+        "reason": "Approval process complexity affects timeline planning and stakeholder management approach"
+      },
+      {
+        "question": "For the digital version deliverables, what specific formats are required - interactive PDF, HTML, mobile-responsive website, or EPUB? Are there any accessibility compliance requirements?",
+        "section_reference": "Scope of Work - Point 8",
+        "severity": "medium",
+        "category": "technical",
+        "reason": "Digital format requirements affect development effort and technical specifications"
+      },
+      {
+        "question": "As a SEBI-regulated exchange, are there specific regulatory filing requirements or formats for the annual report that need to be considered beyond the BRSR compliance already mentioned?",
+        "section_reference": "Overview section",
+        "severity": "medium",
+        "category": "framework",
+        "reason": "Regulatory compliance requirements affect report structure and content development approach"
+      }
+    ]
+  },
+  "org_name": "Multi Commodity Exchange of India Limited (MCX)",
+  "report_type": "Integrated Annual Report"
+}

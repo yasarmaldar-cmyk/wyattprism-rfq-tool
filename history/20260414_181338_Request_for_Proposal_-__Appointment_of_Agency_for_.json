@@ -1,0 +1,242 @@
+{
+  "id": "20260414_181338_Request_for_Proposal_-__Appointment_of_Agency_for_",
+  "filename": "Request for Proposal -  Appointment of Agency for Designing and Printing Annual Report 2025-26.pdf",
+  "saved_at": "2026-04-14T18:13:38.098621",
+  "doc_meta": {
+    "page_count": 4,
+    "char_count": 8852,
+    "file_type": "pdf"
+  },
+  "results": {
+    "summary": {
+      "issuing_organization": {
+        "name": "Nayara Energy Limited",
+        "type": "Private",
+        "sector": "Energy",
+        "listed_entity": null
+      },
+      "document_type": "RFP",
+      "report_type": "Annual Report",
+      "scope_of_work": {
+        "description": "Designing and printing Annual Report FY 2025-26 including content development, design concepts, and printing of 200 copies",
+        "deliverables": [
+          "Content rewriting and development",
+          "5 concept and theme options",
+          "Chairman & CEO messaging",
+          "Board Report rewriting",
+          "AGM Notice/Report",
+          "Financial statements formatting and DTP",
+          "4 versions: Coloured online PDF, Coloured print, Condensed, and Indexed",
+          "200 digitally printed copies with specified distribution",
+          "2 physical mockups post approval",
+          "3 print paper samples"
+        ],
+        "print_specs": {
+          "page_count": "245 pages (based on last year)",
+          "copies": "200 copies",
+          "paper_gsm": "Inside pages: 135/110 gsm, Cover: 250 gsm",
+          "binding": "Binding, Creasing, Lamination included",
+          "size": null,
+          "other": "Cordenons Hi-Print Monnalisa Premium White paper, 200 white covers with logo waves, minimum 300 DPI for images"
+        },
+        "digital_deliverables": [
+          "Coloured online PDF version"
+        ],
+        "languages": [
+          "English"
+        ]
+      },
+      "frameworks": {
+        "detected": [],
+        "implied": [],
+        "recommended_frameworks": [
+          "GRI Standards",
+          "TCFD",
+          "SASB Energy",
+          "CDP",
+          "SDGs"
+        ],
+        "no_framework_detected": true,
+        "framework_notes": "No specific reporting frameworks mentioned. Based on oil & gas sector, recommended frameworks include GRI for comprehensive sustainability reporting, TCFD for climate-related disclosures, SASB Energy for industry-specific metrics, CDP for environmental disclosures, and SDGs for sustainable development alignment."
+      },
+      "timeline": {
+        "key_dates": [
+          {
+            "event": "Proposal submission deadline",
+            "date": "11th February, 2026",
+            "notes": null
+          },
+          {
+            "event": "Assignment completion",
+            "date": "6 weeks from contract award",
+            "notes": null
+          }
+        ],
+        "project_duration": "6 weeks from date of award of contract",
+        "phases": [
+          {
+            "phase": "Part A: Design & Content Development",
+            "duration": null
+          },
+          {
+            "phase": "Part B: Printing and Delivery",
+            "duration": null
+          }
+        ]
+      },
+      "evaluation_criteria": {
+        "method": "Technical + Commercial evaluation",
+        "technical_weightage": null,
+        "financial_weightage": null,
+        "scoring_parameters": [
+          {
+            "parameter": "Annual report design experience (5+ years)",
+            "max_marks": null
+          },
+          {
+            "parameter": "Mumbai client servicing presence",
+            "max_marks": null
+          },
+          {
+            "parameter": "Oil & gas sector experience",
+            "max_marks": null
+          },
+          {
+            "parameter": "Portfolio quality",
+            "max_marks": null
+          },
+          {
+            "parameter": "Client references",
+            "max_marks": null
+          }
+        ]
+      },
+      "financial_terms": {
+        "emd_amount": null,
+        "tender_fee": null,
+        "payment_structure": "Part A: Lump sum, Part B: Per page basis",
+        "gst_treatment": "GST applicable as per commercial proposal table",
+        "other_fees": "Courier and matahadi costs to be borne by vendor"
+      },
+      "submission_requirements": {
+        "format": "Email submission",
+        "email_addresses": [
+          "kavita.thoke@contract.nayaraenergy.com"
+        ],
+        "copies_required": null,
+        "separate_technical_commercial": true
+      },
+      "special_requirements": [
+        "Mumbai presence mandatory with 5 physical visits to BKC office",
+        "Oil & gas sector experience preferred",
+        "Purchase of 8 image package from image bazaar",
+        "Specific paper quality requirements (Cordenons Hi-Print Monnalisa)",
+        "Distribution to 3 different locations (Vadinar, BKC, Link Intime)",
+        "Image optimization services required",
+        "Minimum 300 DPI for all images"
+      ],
+      "contact_information": [
+        {
+          "name": "Priyank Shah",
+          "role": "Sr. Manager \u2013 Digital Marketing",
+          "email": "Priyank.Shah@nayaraenergy.com",
+          "phone": "+91 9930240681"
+        },
+        {
+          "name": "Kavita Thoke",
+          "role": "Procurement Executive",
+          "email": "kavita.thoke@contract.nayaraenergy.com",
+          "phone": "+91 9920130831"
+        }
+      ]
+    },
+    "clarifications": [
+      {
+        "question": "As an integrated oil company, TCFD climate disclosures and GRI Standards are increasingly expected by stakeholders in the energy sector. Should the annual report align with TCFD's four pillars (Governance, Strategy, Risk Management, Metrics & Targets) and/or GRI Standards for sustainability reporting?",
+        "section_reference": "Scope of Work - Part A",
+        "severity": "high",
+        "category": "framework",
+        "reason": "No sustainability framework mentioned despite energy sector expectations. Framework choice impacts content structure, data requirements, and design approach significantly."
+      },
+      {
+        "question": "What is the exact page count expectation for FY 2025-26? Last year was 245 pages - should we assume similar length or do you have a target range?",
+        "section_reference": "Part B - Point 6",
+        "severity": "high",
+        "category": "scope",
+        "reason": "Per-page pricing in Part B requires exact page count for accurate costing. Page count impacts timeline, content planning, and final pricing."
+      },
+      {
+        "question": "What specific content, data, and financial information will Nayara provide, and what are the exact delivery dates for each component (draft financials, board content, images, etc.)?",
+        "section_reference": "Scope of Work - Points 2, 6, 11",
+        "severity": "high",
+        "category": "content",
+        "reason": "Content delivery timeline from client side is critical to meet the 6-week deadline. Delays in client inputs directly impact project completion."
+      },
+      {
+        "question": "For the 4 versions mentioned (coloured online PDF, coloured print, condensed, indexed) - what exactly gets removed in the condensed version and what indexing is required for the indexed version?",
+        "section_reference": "Part A - Point 10",
+        "severity": "high",
+        "category": "scope",
+        "reason": "Different versions require different design and layout work. Scope of condensed version removal and indexing requirements impact effort estimation and pricing."
+      },
+      {
+        "question": "What is the approval process and timeline? How many stakeholders need to review/approve, and how many rounds of revisions are included in the scope?",
+        "section_reference": "Contract Duration - 6 weeks timeline",
+        "severity": "high",
+        "category": "process",
+        "reason": "6-week timeline is aggressive. Understanding approval cycles and revision rounds is crucial to determine if timeline is feasible and to manage client expectations."
+      },
+      {
+        "question": "Are Nayara's brand guidelines, visual identity standards, and previous year's annual report available for reference? What design direction or creative brief will be provided?",
+        "section_reference": "Part A - Points 3, 4",
+        "severity": "medium",
+        "category": "design",
+        "reason": "Brand consistency requires access to guidelines. 5 concept options need creative direction. Previous report helps understand client's design preferences and expectations."
+      },
+      {
+        "question": "What is the specific paper specification for inside pages - is it 135gsm OR 110gsm? The current specification shows '135/110 gsm' which is unclear for costing purposes.",
+        "section_reference": "Part B - Point 2",
+        "severity": "medium",
+        "category": "technical",
+        "reason": "Paper GSM directly impacts printing costs. Unclear specification makes accurate pricing impossible and could lead to disputes later."
+      },
+      {
+        "question": "Does the 6-week timeline include the 2 mockup approvals and 3 print sample approvals mentioned, or are these additional to the timeline?",
+        "section_reference": "Part B - Points 7, 8 and Contract Duration",
+        "severity": "medium",
+        "category": "timeline",
+        "reason": "Mockup and sample approval time needs to be factored into the 6-week deadline. Client approval time for these items could impact overall project completion."
+      },
+      {
+        "question": "What binding style is required (perfect binding, saddle stitch, case binding)? What type of lamination is expected for the cover (matt, gloss, soft-touch)?",
+        "section_reference": "Part B - Point 4",
+        "severity": "medium",
+        "category": "technical",
+        "reason": "Binding and lamination specifications impact both cost and production time. These technical details are essential for accurate pricing and production planning."
+      },
+      {
+        "question": "Are there any mandatory regulatory disclosures or compliance sections required for Nayara Energy's annual report beyond standard company law requirements?",
+        "section_reference": "Part A - Point 9",
+        "severity": "medium",
+        "category": "framework",
+        "reason": "As a major oil company, there may be sector-specific regulatory requirements that need specialized content treatment and design consideration."
+      },
+      {
+        "question": "What digital format specifications are required for the online PDF version (file size limits, accessibility compliance, interactive elements, etc.)?",
+        "section_reference": "Part A - Point 10",
+        "severity": "medium",
+        "category": "technical",
+        "reason": "Online PDF version may require specific technical specifications for web optimization, accessibility, or interactive features that impact design and development effort."
+      },
+      {
+        "question": "What is the budget range for the 'printable 8 image package from image bazaar'? Should this cost be included in our quote or will Nayara handle this purchase separately?",
+        "section_reference": "Part A - Point 12",
+        "severity": "low",
+        "category": "financial",
+        "reason": "Third-party image costs need clarification for accurate proposal pricing. Whether this is included in agency scope or client responsibility affects total project cost."
+      }
+    ]
+  },
+  "org_name": "Nayara Energy Limited",
+  "report_type": "Annual Report"
+}
