@@ -96,30 +96,61 @@ def save_analysis(filename: str, results: dict, doc_meta: dict) -> str:
 
 
 def update_analysis_results(record_id: str | None, new_results: dict) -> None:
-    """Replace the `results` block of an existing history record and re-notify
-    the Wyattprism shell so the project's Proposal artifact is updated with
-    the latest content (e.g. proposal text generated in a separate step)."""
-    if not record_id:
+    """Re-notify the Wyattprism shell with updated proposal content.
+
+    Streamlit Cloud's filesystem is ephemeral — the previously-saved history
+    file may not be there any more — so we build the payload directly from
+    session_state. The local file is updated best-effort if it still exists.
+    """
+    wp_project_id = st.session_state.get("wp_project_id")
+    if not wp_project_id:
+        st.warning(
+            "No Wyattprism project linked to this session. Open the RFQ tool "
+            "again from the project page in the platform."
+        )
         return
-    for f in HISTORY_DIR.glob("*.json"):
-        try:
-            data = json.loads(f.read_text())
-        except (json.JSONDecodeError, OSError):
-            continue
-        if data.get("id") != record_id:
-            continue
-        data["results"] = new_results
-        # Also refresh org_name / report_type in case they were updated
-        summary = new_results.get("summary", {}) or {}
-        org = summary.get("issuing_organization", {}) or {}
-        if org.get("name"):
-            data["org_name"] = org["name"]
-        if summary.get("report_type"):
-            data["report_type"] = summary["report_type"]
-        f.write_text(json.dumps(data, indent=2, default=str))
-        if data.get("wp_project_id"):
-            _notify_shell(data)
-        return
+
+    # Best-effort: update the local history file if it still exists
+    org_name = "Unknown"
+    report_type = "Unknown"
+    filename = st.session_state.get("uploaded_filename", "document")
+
+    if record_id:
+        for f in HISTORY_DIR.glob("*.json"):
+            try:
+                data = json.loads(f.read_text())
+            except (json.JSONDecodeError, OSError):
+                continue
+            if data.get("id") != record_id:
+                continue
+            data["results"] = new_results
+            summary_l = new_results.get("summary", {}) or {}
+            org_l = summary_l.get("issuing_organization", {}) or {}
+            if org_l.get("name"):
+                data["org_name"] = org_l["name"]
+            if summary_l.get("report_type"):
+                data["report_type"] = summary_l["report_type"]
+            f.write_text(json.dumps(data, indent=2, default=str))
+            org_name = data.get("org_name", org_name)
+            report_type = data.get("report_type", report_type)
+            filename = data.get("filename", filename)
+            break
+
+    # Build a synthetic record from session_state + the new results and POST
+    # to the shell directly. This works even if the local file was lost.
+    summary = new_results.get("summary", {}) or {}
+    org = summary.get("issuing_organization", {}) or {}
+    record = {
+        "id": record_id or _generate_id(filename),
+        "filename": filename,
+        "saved_at": datetime.now().isoformat(),
+        "org_name": org.get("name") or org_name,
+        "report_type": summary.get("report_type") or report_type,
+        "results": new_results,
+        "wp_project_id": wp_project_id,
+        "wp_project_code": st.session_state.get("wp_project_code"),
+    }
+    _notify_shell(record)
 
 
 def _get_shell_config():
@@ -139,11 +170,20 @@ def _get_shell_config():
 def _notify_shell(record: dict) -> None:
     """POST a saved proposal back to the Wyattprism shell so it can attach
     the result to the project. Best-effort — failures show a warning but do
-    not break the local save."""
+    not break the local save. Status is shown both via toast (transient) and
+    via persistent inline message so users always know what happened."""
     shell_url, callback_key = _get_shell_config()
     if not shell_url or not callback_key:
-        return  # Not configured (e.g. running standalone) — silent skip.
+        # Tell the user explicitly — these env vars must be set in Streamlit
+        # Cloud's secrets panel for the integration to work.
+        if record.get("wp_project_id"):
+            st.warning(
+                "Wyattprism integration is missing config (SHELL_URL or "
+                "SHELL_CALLBACK_KEY). Proposal saved locally but not synced."
+            )
+        return
 
+    has_proposal = bool(record.get("results", {}).get("proposal"))
     payload = {
         "wp_project_id": record.get("wp_project_id"),
         "wp_project_code": record.get("wp_project_code"),
@@ -167,10 +207,31 @@ def _notify_shell(record: dict) -> None:
     )
     try:
         with urllib.request.urlopen(req, timeout=15) as resp:
-            resp.read()
-        st.toast("Synced to Wyattprism platform.", icon="✅")
-    except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError) as e:
-        st.toast(f"Could not sync to platform: {e}", icon="⚠️")
+            body = resp.read().decode("utf-8", errors="replace")
+            status = resp.status
+        if has_proposal:
+            st.success(
+                f"✓ Proposal synced to Wyattprism platform "
+                f"(project {record.get('wp_project_code', '')})."
+            )
+        else:
+            st.info(
+                "Analysis synced to Wyattprism. Proposal text will be sent "
+                "once you click *Generate Proposal Draft*."
+            )
+        # Keep the small toast as well in case they switch tabs
+        st.toast("Synced to Wyattprism.", icon="✅")
+        # Debug breadcrumb visible in Streamlit Cloud logs
+        print(f"[wyattprism-sync] OK status={status} has_proposal={has_proposal} body={body[:200]}")
+    except urllib.error.HTTPError as e:
+        body = e.read().decode("utf-8", errors="replace") if hasattr(e, "read") else ""
+        st.error(
+            f"Could not sync to Wyattprism (HTTP {e.code}): {body[:300]}"
+        )
+        print(f"[wyattprism-sync] FAIL HTTPError code={e.code} body={body[:500]}")
+    except (urllib.error.URLError, TimeoutError) as e:
+        st.error(f"Could not reach Wyattprism platform: {e}")
+        print(f"[wyattprism-sync] FAIL URLError {e}")
 
 
 def update_record(record_id: str, updates: dict):
