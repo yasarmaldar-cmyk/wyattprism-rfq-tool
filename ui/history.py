@@ -85,10 +85,41 @@ def save_analysis(filename: str, results: dict, doc_meta: dict) -> str:
     filepath = HISTORY_DIR / f"{record['id']}.json"
     filepath.write_text(json.dumps(record, indent=2, default=str))
 
+    # Remember which record represents the current session so later updates
+    # (e.g. generating the proposal in Upload mode) can find and update it.
+    st.session_state["current_record_id"] = record["id"]
+
     if wp_project_id:
         _notify_shell(record)
 
     return str(filepath)
+
+
+def update_analysis_results(record_id: str | None, new_results: dict) -> None:
+    """Replace the `results` block of an existing history record and re-notify
+    the Wyattprism shell so the project's Proposal artifact is updated with
+    the latest content (e.g. proposal text generated in a separate step)."""
+    if not record_id:
+        return
+    for f in HISTORY_DIR.glob("*.json"):
+        try:
+            data = json.loads(f.read_text())
+        except (json.JSONDecodeError, OSError):
+            continue
+        if data.get("id") != record_id:
+            continue
+        data["results"] = new_results
+        # Also refresh org_name / report_type in case they were updated
+        summary = new_results.get("summary", {}) or {}
+        org = summary.get("issuing_organization", {}) or {}
+        if org.get("name"):
+            data["org_name"] = org["name"]
+        if summary.get("report_type"):
+            data["report_type"] = summary["report_type"]
+        f.write_text(json.dumps(data, indent=2, default=str))
+        if data.get("wp_project_id"):
+            _notify_shell(data)
+        return
 
 
 def _get_shell_config():

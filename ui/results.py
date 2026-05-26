@@ -315,6 +315,7 @@ def _render_proposal(results: dict):
         if st.button("Generate Proposal Draft", type="primary", use_container_width=True):
             from analysis.proposal import generate_proposal
             from analysis.client import ClaudeClient
+            from ui.history import update_analysis_results
 
             model = "claude-sonnet-4-20250514"
             client = ClaudeClient(model=model)
@@ -326,6 +327,13 @@ def _render_proposal(results: dict):
                 try:
                     proposal = generate_proposal(client, doc_text, summary, answered)
                     st.session_state.analysis_results["proposal"] = proposal
+                    # Persist the updated results to the saved history record
+                    # and re-notify the Wyattprism shell so the project's
+                    # Proposal artifact picks up the new text.
+                    update_analysis_results(
+                        st.session_state.get("current_record_id"),
+                        st.session_state.analysis_results,
+                    )
                     st.rerun()
                 except Exception as e:
                     st.error(f"Proposal generation failed: {e}")
