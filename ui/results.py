@@ -323,20 +323,28 @@ def _render_proposal(results: dict):
             doc = st.session_state.get("parsed_doc")
             doc_text = doc.raw_text if doc else ""
 
+            proposal_generated = False
             with st.spinner("Drafting proposal in WyattPrism format..."):
                 try:
                     proposal = generate_proposal(client, doc_text, summary, answered)
                     st.session_state.analysis_results["proposal"] = proposal
-                    # Persist the updated results to the saved history record
-                    # and re-notify the Wyattprism shell so the project's
-                    # Proposal artifact picks up the new text.
+                    proposal_generated = True
+                except Exception as e:
+                    st.error(f"Proposal generation failed: {e}")
+
+            # Separate the shell sync from the generation so a sync failure
+            # is shown to the user instead of looking like a generation failure.
+            if proposal_generated:
+                try:
                     update_analysis_results(
                         st.session_state.get("current_record_id"),
                         st.session_state.analysis_results,
                     )
-                    st.rerun()
                 except Exception as e:
-                    st.error(f"Proposal generation failed: {e}")
+                    st.error(
+                        f"Proposal generated, but syncing to Wyattprism failed: {e}"
+                    )
+                st.rerun()
         return
 
     # Display the proposal

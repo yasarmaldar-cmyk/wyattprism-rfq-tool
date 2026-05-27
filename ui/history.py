@@ -99,42 +99,52 @@ def update_analysis_results(record_id: str | None, new_results: dict) -> None:
     """Re-notify the Wyattprism shell with updated proposal content.
 
     Streamlit Cloud's filesystem is ephemeral — the previously-saved history
-    file may not be there any more — so we build the payload directly from
-    session_state. The local file is updated best-effort if it still exists.
+    file may not be there any more — so the local file update is fully
+    best-effort and the callback is built directly from session_state.
     """
+    print(f"[wyattprism-update] called record_id={record_id} has_proposal_in_new_results={bool(new_results.get('proposal'))}")
+
     wp_project_id = st.session_state.get("wp_project_id")
     if not wp_project_id:
         st.warning(
             "No Wyattprism project linked to this session. Open the RFQ tool "
             "again from the project page in the platform."
         )
+        print("[wyattprism-update] SKIP — no wp_project_id in session_state")
         return
 
-    # Best-effort: update the local history file if it still exists
+    # Best-effort: update the local history file if it still exists. Wrapped
+    # so a write failure on the ephemeral FS can't block the callback.
     org_name = "Unknown"
     report_type = "Unknown"
     filename = st.session_state.get("uploaded_filename", "document")
 
-    if record_id:
-        for f in HISTORY_DIR.glob("*.json"):
-            try:
-                data = json.loads(f.read_text())
-            except (json.JSONDecodeError, OSError):
-                continue
-            if data.get("id") != record_id:
-                continue
-            data["results"] = new_results
-            summary_l = new_results.get("summary", {}) or {}
-            org_l = summary_l.get("issuing_organization", {}) or {}
-            if org_l.get("name"):
-                data["org_name"] = org_l["name"]
-            if summary_l.get("report_type"):
-                data["report_type"] = summary_l["report_type"]
-            f.write_text(json.dumps(data, indent=2, default=str))
-            org_name = data.get("org_name", org_name)
-            report_type = data.get("report_type", report_type)
-            filename = data.get("filename", filename)
-            break
+    try:
+        if record_id:
+            for f in HISTORY_DIR.glob("*.json"):
+                try:
+                    data = json.loads(f.read_text())
+                except (json.JSONDecodeError, OSError):
+                    continue
+                if data.get("id") != record_id:
+                    continue
+                try:
+                    data["results"] = new_results
+                    summary_l = new_results.get("summary", {}) or {}
+                    org_l = summary_l.get("issuing_organization", {}) or {}
+                    if org_l.get("name"):
+                        data["org_name"] = org_l["name"]
+                    if summary_l.get("report_type"):
+                        data["report_type"] = summary_l["report_type"]
+                    f.write_text(json.dumps(data, indent=2, default=str))
+                except OSError as e:
+                    print(f"[wyattprism-update] local file write failed (ignored): {e}")
+                org_name = data.get("org_name", org_name)
+                report_type = data.get("report_type", report_type)
+                filename = data.get("filename", filename)
+                break
+    except OSError as e:
+        print(f"[wyattprism-update] local file scan failed (ignored): {e}")
 
     # Build a synthetic record from session_state + the new results and POST
     # to the shell directly. This works even if the local file was lost.
@@ -150,6 +160,7 @@ def update_analysis_results(record_id: str | None, new_results: dict) -> None:
         "wp_project_id": wp_project_id,
         "wp_project_code": st.session_state.get("wp_project_code"),
     }
+    print(f"[wyattprism-update] about to notify shell, payload has proposal={bool(record['results'].get('proposal'))}")
     _notify_shell(record)
 
 
